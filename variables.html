@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        let name = 'Jamiu'; //Declaration
+        let car = "Honda"
+
+        console.log(name + " drives a " + car)
+
+        //reassigning
+        name = "Agas"; 
+        
+        console.log(name + " drives a " + car)
+
+        //constants
+        const PI = 3.14;
+
+        //Variable scopes
+
+        //Block scope
+
+        {
+            let x = 20; // works only in block scope
+            console.log(x);
+        }
+
+        {
+            var y = 30; //works outside a block scope
+        }
+
+        console.log(y);
+
+        {
+            const z = 30; //works only inside a block scope
+        }
+
+        console.log(z);
+        
+    </script>
+</body>
+
+</html>
+
