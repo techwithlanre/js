@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document Object Model</title>
+
+        <style>
+            .newClass {
+                color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="heading">My Heading</h1>
+        <p id="paragraph">My paragraph.</p>
+        <button class="btn">Click Me 1</button>
+        <button class="btn">Click Me 2</button>
+        <button class="btn">Click Me 3</button>
+        <button class="btn">Click Me 4</button>
+    </body>
+    <script>
+
+        //Getting Elements By ID
+        const heading = document.getElementById('heading'); //returns single element
+        console.log(heading);
+        heading.textContent = "I was changed using DOM";
+        heading.style = "font-size: 120px";
+        heading.setAttribute('class', 'newClass');
+
+        const paragraph = document.getElementById('paragraph') //returns single element
+        console.log(paragraph);
+ 
+        const buttons = document.getElementsByClassName('btn'); // returns HTMLCollectionn (multiple elements)
+        console.log(buttons);
+
+        const tagName = document.getElementsByTagName('button'); // returns HTMLCollectionn (multiple elements)
+        console.log(tagName);
+
+
+        const queryElement = document.querySelector('.btn'); // returns single element (the first on the page)
+        console.log(queryElement);
+
+        const queryElements = document.querySelectorAll('.btn'); // returns NodeList (same as HTMLCollection)
+        console.log(queryElements);
+
+    </script>
+</html>
