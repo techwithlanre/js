@@ -18,6 +18,9 @@
         <button class="btn">Click Me 2</button>
         <button class="btn">Click Me 3</button>
         <button class="btn">Click Me 4</button>
+        <div id="newDivParent" style="background-color: red;">
+
+        </div>
     </body>
     <script>
 
@@ -27,12 +30,20 @@
         heading.textContent = "I was changed using DOM";
         heading.style = "font-size: 120px";
         heading.setAttribute('class', 'newClass');
+        const newDivUnderButtons = document.createElement('div');
+        newDivUnderButtons.textContent = "I am a new div under buttons buttons";
+        console.log(newDivUnderButtons);
+        document.getElementById('newDivParent').appendChild(newDivUnderButtons); // append element to paghe/other elememnts
+        
+
 
         const paragraph = document.getElementById('paragraph') //returns single element
         console.log(paragraph);
  
         const buttons = document.getElementsByClassName('btn'); // returns HTMLCollectionn (multiple elements)
         console.log(buttons);
+
+        document.body.removeChild(paragraph) // remove element from page
 
         const tagName = document.getElementsByTagName('button'); // returns HTMLCollectionn (multiple elements)
         console.log(tagName);
