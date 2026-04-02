@@ -5,7 +5,7 @@
     <title>String Functions</title>
 </head>
 <body>
-    
+         
 
     <script>
 
@@ -26,6 +26,166 @@
 
         //Assignment
         //Implement 10 string functions, with explanation and 3 examples each (you can include the previous ones we've done before)
+
+        // 1. toLowerCase (Change all text to lower case )
+        let string = "Hello World";
+        let string2 = "FEMI ASHE";
+        let string3 = "JAM jam"
+
+        console.log(string.toLowerCase());
+        console.log(string2.toLowerCase());
+        console.log(string3.toLowerCase());
+
+
+        // 2. toUpperCase (change all text to UPPER CASE)
+        let string4 = "Hello World";
+        let string5 = "femi ashe";
+        let string6 = "JAM jam";
+
+        console.log(string4.toUpperCase());
+        console.log(string5.toUpperCase());
+        console.log(string6.toUpperCase());
+
+        // 3. Trim (remove spaces at beginning and end )
+        let string7 = "    Hello World    ";
+        let string8 = "    femi ashe";
+        let string9 = "JAM jam    ";
+
+        console.log(string7.trim());
+        console.log(string8.trim());
+        console.log(string9.trim());
+
+
+        // 4. includes (Checks if a string contains another string)
+        let string10 = "Hello World";
+        let string11 = "femi ashe";
+        let string12 = "JAM jam";
+        
+        console.log(string10.includes("Hello"));
+        console.log(string11.includes("ashe"));
+        console.log(string12.includes("bye"));
+
+        // 5. indexOf (Returns the position (index) of a character or word)
+        let string13 = "Hello";
+        let string14 = "femi";
+        let string15 = "JAM";
+        
+        console.log(string13.indexOf("o"));
+        console.log(string14.indexOf("m"));
+        console.log(string15.indexOf("J"));
+
+
+        // 6. Replace (Replaces part of a string with another value)
+        let string19 = "Hello World";
+        let string20 = "femi";
+        let string21 = "JAM";
+        
+        console.log(string19.replace("World","people"));
+        console.log(string20.replace("e", "a"));
+        console.log(string21.replace("JAM", "maj"));
+
+
+
+        //  7. slice (Extract a part of a string) i need explanation 
+        let string16 = "Hello";
+        let string17 = "femi";
+        let string18 = "JAMoooooooooooo";
+        
+        
+        console.log(string16.slice(0, 3)); //  returns part of a string starting from a given index and ending on an index before the given ending index
+        console.log(string17.slice(0,3));
+        console.log(string18.slice(1));
+
+
+
+        //  8. Split (Splits a string into an array) i need further explanation 
+        let string22 = "HelloWorld";
+        let string23 = "femi ashe";
+        let string24 = "J, AM";
+
+        console.log("=========================");
+        console.log(string22.split(""));
+        console.log(string23.split(" "));
+        console.log(string24.split(","));
+        console.log("=========================");
+
+
+        //  9. length (Returns the number of characters)  
+        let string25 = "Hello";
+        let string26 = "femi";
+        let string27 = "JAM";
+        
+        console.log(string25.length);
+        console.log(string26.length);
+        console.log(string27.length);
+        
+
+        //  10. CharAt (Returns a character at a specific index)  
+        let string28 = "Hello";
+        let string29 = "femi";
+        let string30 = "JAM";
+        
+        console.log(string28.charAt(4));
+        console.log(string29.charAt(2));
+        console.log(string30.charAt(1));
+
+        /* 
+        substr: Extracts a specified number of characters from a string. The substr function is used to extract a specified number of characters from a string.
+        */
+        let string31 = "Hello World";
+        console.log(string31.substr(1, 6));
+
+        
+
+        /* 
+        startsWith: Checks if a string starts with a specified substring. The startsWith function is used to check if a string starts with a specific substring.
+        */
+
+         let string32 = "Hello World";
+         console.log(string31.startsWith('H')); //true
+         console.log(string31.startsWith('h')); // false
+         console.log(string31.startsWith('e')); //false
+         console.log(string31.endsWith('D')); // false
+         console.log(string31.endsWith('d')); // true
+         console.log(string31.endsWith('a')); // false
+
+
+         /* 
+         repeat: Returns a new string with a specified number of copies of the original string. The repeat function is used to repeat a string a specified number of times and return the concatenated result.
+         */
+
+
+
+        const string33 = "Hello";
+        console.log(string33.repeat(30)); // Output: HelloHelloHello
+
+
+        const string34 = '1';
+        console.log(string34.padStart(4, '0')); // Output: xxxxxHello
+        console.log(string34.padEnd(4, '0')); // Output: xxxxxHello
+
+
+        /* 
+        substring: Extracts the characters between two specified indices. The substring function is used to extract a substring from a string between two specified indices.
+        */
+
+        const string35 = 'Hello World';
+        console.log(string35.substring(6, 8)); // Output: World
+
+
+        //String concatenation
+
+        const firstName = "Jamiu";
+        const lastName = "Olanrewaju"
+
+        console.log(firstName + " " + lastName);
+        console.log(firstName.concat(" ", lastName));
+
+
+
+        //assignment
+        
+        
 
     </script>
 </body>
