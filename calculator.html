@@ -82,31 +82,31 @@
 
         // FUNCTIONS
         // 1. Named Functions 
-            // It has a name and can be called later 
+        // It has a name and can be called later 
 
-            function bye() {
-                console.log ("goodbye");
-            };
+        function bye() {
+            console.log ("goodbye");
+        };
 
-            bye();
+        bye();
 
         // 2. Anonymous Function
-        //     it has no function name and its stored inside a variable
+        // it has no function name and its stored inside a variable
 
-            let goodnight = function() {
+        let goodnight = function() {
             console.log ("odaaro");
-            }
-            
-            goodnight();
+        }
+        
+        goodnight();
 
         // 3. Arrow Functions
-            // it is used to shorten function syntax when they are too long 
+        // it is used to shorten function syntax when they are too long 
 
-            let greet = () => {
-                console.log ("hello")
-            }
+        let greet = () => {
+            console.log ("hello")
+        }
 
-            greet();
+        greet();
 
         // 4. IIFE (Immediately Invoked Function Expression)   
         //         Run once Immediately and don't use again, doesn't pollute global scope 
@@ -114,7 +114,7 @@
 
             (function() {
                 console.log("wassup");
-                    })();
+            })();
 
         // 5. Generator Functions
         //         Control execution step-by-step
@@ -123,16 +123,16 @@
         //         resume → yield 3 → pause
 
         function* numbers() {
-            yield 1;
-            yield 2;
+            yield 1; //create account
+            yield 2; // send email
             yield 3;
-                    }
+        }
 
         let gen = numbers();
-       console.log(gen.next());
-       console.log(gen.next());
-       console.log(gen.next());
-       console.log(gen.next());
+        console.log(gen.next());
+        console.log(gen.next());
+        console.log(gen.next());
+        console.log(gen.next());
 
        
     </script>
