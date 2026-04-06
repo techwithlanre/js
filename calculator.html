@@ -80,7 +80,61 @@
             document.getElementById("result").innerText ="Result: " + result;
         }
 
-        
+        // FUNCTIONS
+        // 1. Named Functions 
+            // It has a name and can be called later 
+
+            function bye() {
+                console.log ("goodbye");
+            };
+
+            bye();
+
+        // 2. Anonymous Function
+        //     it has no function name and its stored inside a variable
+
+            let goodnight = function() {
+            console.log ("odaaro");
+            }
+            
+            goodnight();
+
+        // 3. Arrow Functions
+            // it is used to shorten function syntax when they are too long 
+
+            let greet = () => {
+                console.log ("hello")
+            }
+
+            greet();
+
+        // 4. IIFE (Immediately Invoked Function Expression)   
+        //         Run once Immediately and don't use again, doesn't pollute global scope 
+                    // create ---> run ---> destroy
+
+            (function() {
+                console.log("wassup");
+                    })();
+
+        // 5. Generator Functions
+        //         Control execution step-by-step
+        //         start → yield 1 → pause
+        //         resume → yield 2 → pause
+        //         resume → yield 3 → pause
+
+        function* numbers() {
+            yield 1;
+            yield 2;
+            yield 3;
+                    }
+
+        let gen = numbers();
+       console.log(gen.next());
+       console.log(gen.next());
+       console.log(gen.next());
+       console.log(gen.next());
+
+       
     </script>
 </body>
 </html>
