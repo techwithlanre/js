@@ -15,81 +15,62 @@
 
     <script>
         let fruits = ["apple", "banana", "orange"];
-        console.log(fruits[0]); //apple
-        console.log(fruits[1]); //banana
-        console.log(fruits[2]);//orange
+        // console.log(fruits[0]); //apple
+        // console.log(fruits[1]); //banana
+        // console.log(fruits[2]);//orange
 
         fruits[1] = "mango";
-        console.log(fruits[1]); //mango
+        //console.log(fruits[1]); //mango
 
 
 
         //Array Functions/Methods
         //length
 
-        console.log(fruits.length); //3
+        //console.log(fruits.length); //3
 
 
         //Push
         //The push() method adds one or more elements to the end of an array. Here's an example:
         fruits.push("peach");
-        console.log(fruits); //["apple", "banana", "orange", "peach"]
+        //console.log(fruits); //["apple", "banana", "orange", "peach"]
 
 
         //Pop
         //The pop() method removes the last element from an array. Here's an example:
         fruits.pop();
-        console.log(fruits); //["apple", "banana", "orange"]
+        //console.log(fruits); //["apple", "banana", "orange"]
 
 
         //## Iterating over an Array
         //You can loop through all elements of an array using various looping mechanisms. Let's consider an example using a for loop:
-        let cars = ["toyota", "honda", "ferrari"];
+        let cars = ["toyota", "honda", "ferrari", "lamborghini"];
 
 
         for (let i = 0; i < cars.length; i++) {
-            console.log(i);
-            console.log(cars[i]);
+            //console.log(i);
+            //console.log(cars[i]);
 
             if(cars[i] == 'toyota') {
-                console.log('i hate toyota');
+                //console.log('i hate toyota');
             }
         }
 
+        //ARRAY DESTRUCTURING
+        const [toyota, honda, ...otherCars] = cars;
+        console.log(otherCars);
 
 
-
-        //Assignment
-
+        //ASSIGNMENT
         /* 
         
-        
-        Assignment: Introduction to JavaScript Arrays
-        🎯 Objective
+        Create an array of football clubs in the premier league, 
+        1. Rearranage them in order of thier current standing on the premier league table
+        2. Rearrange them in order of numbers of goals this current season
+        3. 
 
-        Learn how to create, access, and manipulate arrays in JavaScript.
-
-        📝 Instructions
-        🔹 Part 1: Create an Array
-            Create an array called fruits that contains at least 5 fruits.
-            Print the entire array to the console.
-    
-        🔹 Part 2: Access Elements
-            Print the first fruit in the array.
-            Print the last fruit in the array.
-
-        🔹 Part 3: Modify the Array
-            Add a new fruit to the end of the array.
-            Remove the first fruit from the array.
-            Print the updated array.
-
-        🔹 Part 4: Loop Through the Array
-            Use a loop to print each fruit in the array.
-
-        🔹 Part 5: Simple Function
-            Write a function called countFruits that returns the number of fruits in the array.
-            Call the function and print the result.
         */
+        
     </script>
 </body>
 </html>
