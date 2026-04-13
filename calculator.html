@@ -19,7 +19,7 @@
         
         <input type="number" id="num2" placeholder="Enter second number" class=" border border-gray-500 p-2 rounded-xl mb-6">
 
-        <select name="" id="operator" class=" border border-gray-500 p-2 rounded-xl mb-6">
+        <select id="operator" class=" border border-gray-500 p-2 rounded-xl mb-6">
             <option value="+">Add</option>
             <option value="-">Substract</option>
             <option value="*">Multiply</option>
@@ -132,7 +132,7 @@
         let gen = numbers();
        console.log(gen.next());
        console.log(gen.next());
-       console.log(gen.next());
+       console.log(gen.next()); 
        console.log(gen.next());
 
 
@@ -180,7 +180,38 @@
         function countfruits() {
             return fruits.length;
         }
-        console.log(countfruits());
+        console.log(countfruits()); 
+        
+        
+        // Create an array of football clubs in the premier league, 
+        // 1. Rearranage them in order of thier current standing on the premier league table
+        // 2. Rearrange them in order of numbers of goals this current season
+
+        let clubs = [
+        { name: "Man United", position: 3, goals: 56 },
+        { name: "Aston Villa", position: 4, goals: 42 },
+        { name: "Arsenal", position: 1, goals: 61 },
+        { name: "Man City", position: 2, goals: 60 }
+        ];
+
+
+        //  SORT BY POSITION ONLY
+        let sortedByPosition = [...clubs].sort((a, b) => a.position - b.position);
+
+        console.log("Positions:");
+        sortedByPosition.forEach(club => {
+        console.log(club.position);
+        });
+
+
+        //  SORT BY GOALS ONLY
+        let sortedByGoals = [...clubs].sort((a, b) => b.goals - a.goals);
+
+        console.log("Goals:");
+        sortedByGoals.forEach(club => {
+        console.log(club.goals);
+        });
+
     </script>
 </body>
 </html>
